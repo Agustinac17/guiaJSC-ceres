@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia Javascript</title>
+  <link rel="stylesheet" href="estiloguia.css">
+</head>
+
+<body>
+    <script>
+      //INTRODUCCIÓN
+      document.write('INTRODUCCIÓN <br>');
+      document.write('Agustina <br> 21 años <br>');
+
+      document.write('-------------------');
+      document.write ('<br>');
+      document.write ('<br>');
+
+      //VARIABLES
+      document.write('VARIABLES <br>');
+      let nombre_apellido = 'Pedrito Fernández';
+      let sueldo = 1000000;
+      document.write (nombre_apellido);
+      document.write ('<br>');
+      document.write (sueldo);
+      document.write ('<br>');
+
+      document.write('-------------------');
+      document.write ('<br>');
+      document.write ('<br>');
+
+      //ENTRADA POR DATOS POR TECLADO
+      document.write('ENTRADA DE DATOS POR TECLADO <br>');
+      let nombre_usuario;
+      let mail;
+      //nombre_usuario = prompt ('Ingrese su nombre de usuario')
+      //mail = prompt('Ingrese su mail')
+      document.write('Perfecto '+ nombre_usuario)
+      document.write ('<br>');
+      document.write('Ingresaste el mail: ' + mail)
+      document.write('  ¿Es correcto?');
+      document.write ('<br>');
+
+      document.write('-------------------');
+      document.write ('<br>');
+      document.write ('<br>');
+
+      //ESTRUCTURAS SECUENCIALES DE PROGRAMACIÓN
+      document.write('ESTRUCTURAS SECUENCIALES DE PROGRAMACIÓN <br>');
+      document.write('EJERCICIO 1 <br>');
+      let lado_cuadrado;
+      let resultado;
+      //lado_cuadrado = prompt('Ingrese el valor del lado del cuadrado');
+      resultado = parseInt(lado_cuadrado) * 4;
+      document.write('El perímetro es de: ' + resultado + '<br>');
+      document.write ('<br>');
+
+      document.write('EJERCICIO 2 <br>');
+      let valor1, valor2, valor3, valor4;
+      let suma, producto;
+      /*valor1 = prompt('Ingrese el valor uno: ');
+      valor2 = prompt('Ingrese el valor dos: ');
+      suma = parseInt(valor1) + parseInt(valor2);
+      valor3 = prompt('Ingrese el valor tres: ');
+      valor4 = prompt('Ingrese el valor cuatro: ');*/
+      producto = parseInt(valor3) * parseInt(valor4);
+      document.write ('El resultado de la suma es: ' + suma + '<br>' + 'El resultado de la multiplicación es: '+ producto + '<br>');
+      document.write ('<br>');
+
+      document.write('EJERCICIO 3 <br>');
+      let v1, v2, v3, v4;
+      let suma1;
+      let producto1;
+      /*v1 = prompt('Ingrese el valor uno: ');
+      v2 = prompt('Ingrese el valor dos: ');
+      v3 = prompt('Ingrese el valor tres: ');
+      v4 = prompt('Ingrese el valor cuatro: ');*/
+      suma1 = parseInt(v1) + parseInt(v2) + parseInt(v3) + parseInt(v4);
+      producto1 = parseInt(v1) * parseInt(v2) * parseInt(v3) * parseInt(v4);
+      document.write ('El resultado de la suma es: ' + suma1 + '<br>' + 'El resultado de la multiplicación es: '+ producto1 + '<br>');
+      document.write ('<br>');
+
+      document.write('EJERCICIO 4 <br>');
+      let p_articulo, cantidad, total;
+      //p_articulo = prompt('Ingrese el precio');
+      //cantidad = prompt('Ingrese la cantidad');
+      total = parseInt(p_articulo) * parseInt(cantidad);
+      document.write ('Su total es de: ' + total + '<br>');
+      document.write ('<br>');
+
+      document.write('-------------------');
+      document.write ('<br>');
+      document.write ('<br>');
+
+      //ESTRUCTURAS CONDICIONALES SIMPLES
+      document.write('ESTRUCTURAS CONDICIONALES SIMPLES <br>');
+      document.write('EJERCICIO 1 <br>');
+      let n1, n2, n3;
+      //n1=parseInt(prompt('Ingrese la primer nota: '));
+      //n2=parseInt(prompt('Ingrese la segunda nota: '));
+      //n3=parseInt(prompt('Ingrese la tercera nota: '));
+      promedio = (n1 + n2 + n3) / 3;
+      if (promedio >= 7){
+        document.write('Usted ha promocionado con: '+ promedio);
+        document.write ('<br>');
+      }
+
+      document.write('-------------------');
+      document.write ('<br>');
+      document.write ('<br>');
+
+      //ESTRUCTURAS CONDICIONALES COMPUESTAS
+      document.write('ESTRUCTURAS CONDICIONALES COMPUESTAS <br>');
+      document.write('EJERCICIO 1 <br>');  
+      let num1, num2;
+      //num1=parseInt(prompt('Ingrese el primer número: '));
+      //num2=parseInt(prompt('Ingrese el segundo número: '));
+      if (num1>num2){
+        let suma = num1+num2;
+        let dif= num1-num2; 
+        document.write('La suma es de: '+ suma + 'y la diferencia es de: '+ dif);
+      }
+      else {
+        let prod= num1*num2;
+        let div= num1/num2;
+        document.write('El producto es de: '+ prod + 'y el cociente es de: '+ div);
+      }
+      document.write ('<br>');
+      
+      document.write('-------------------');
+      document.write ('<br>');
+      document.write ('<br>');
+
+      //ESTRUCTURAS CONDICIONALES ANIDADAS
+      document.write('ESTRUCTURAS CONDICIONALES ANIDADAS <br>');
+      document.write('EJERCICIO 1 <br>');  
+      let numero1, numero2, numero3;
+      //numero1=parseInt(prompt('Ingrese el primer número: '));
+      //numero2=parseInt(prompt('Ingrese el segundo número: '));
+      //numero3=parseInt(prompt('Ingrese el segundo número: '));
+      if (numero1 > numero2 && numero1 > numero3){
+        document.write('El numero '+ numero1 +'es mayor');
+      }
+      else if (numero2 > numero1 && numero2 > numero3){
+        document.write('El numero '+ numero2 +'es mayor');
+      }
+      else (numero3 > numero2 && numero3 > numero1)
+        document.write('El numero '+ numero3 +'es mayor');
+      document.write ('<br>');
+      
+      document.write('-------------------');
+      document.write ('<br>');
+      document.write ('<br>');
+
+      //OPERADORES LÓGICOS && (Y) estructuras condicionales
+      document.write('OPERADORES LÓGICOS && (Y) estructuras condicionales <br>');
+      document.write('EJERCICIO 1 <br>');
+      let dia, mes;
+      //dia = parseInt(prompt('Ingrese el dia: '))
+      //mes = parseInt(prompt('Ingrese mes'))
+      if (dia == 25 && mes == 12){
+        document.write('ES NAVIDAD');
+      }
+      else {
+        document.write('NO ES NAVIDAD');
+      }
+      document.write ('<br>');
+
+      document.write('-------------------');
+      document.write ('<br>');
+      document.write ('<br>');
+
+      //OPERADORES LÓGICOS || (o) estructuras condicionales
+      document.write('OPERADORES LÓGICOS || (o) estructuras condicionales <br>');
+      document.write('EJERCICIO 1 <br>');
+      let val1, val2, val3;
+      //val1 = prompt('Ingrese el valor uno: ');
+      //val2 = prompt('Ingrese el valor dos: ');
+      //val3 = prompt('Ingrese el valor tres: ');
+      if (val1 < 10 || val2 < 10 || val3 < 10){
+        document.write('Alguno de los numeros es menor a diez')
+      }
+      else {
+        document.write('Ninguno es menor a diez')
+      }
+      document.write ('<br>');
+
+      document.write('-------------------');
+      document.write ('<br>');
+      document.write ('<br>');
+
+      //ESTRUCTURA SWITCH
+      document.write('ESTRUCTURA SWITCH <br>');
+      document.write('EJERCICIO 1 <br>');
+      let palabra;
+      palabra = (prompt('Ingrese la palabra que desee traducir: casa - mesa - perro - gato'));
+      switch (palabra) {
+          case 'casa':
+              document.write('house');
+              break;
+          case 'mesa':
+              document.write('table');
+              break;
+          case 'perro':
+              document.write('dog');
+              break;
+          case 'gato':
+              document.write('cat');
+              break;
+          default:
+              document.write('No se');
+      }
+      document.write ('<br>');
+
+      document.write('-------------------');
+      document.write ('<br>');
+      document.write ('<br>');
+
+      //ESTRUCTURA REPETITIVA WHILE
+      document.write('ESTRUCTURA REPETITIV <br>');
+      document.write('EJERCICIO 1 <br>');
+
+      document.write ('<br>');
+
+      document.write('-------------------');
+      document.write ('<br>');
+      document.write ('<br>');
+
+      //CONCEPTO DE ACUMULADOR
+      document.write('CONCEPTO DE ACUMULADOR <br>');
+      document.write('EJERCICIO 1 <br>');
+
+    </script>
+</body>
